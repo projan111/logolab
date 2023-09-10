@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Source+Sans+3:wght@300;600;700&display=swap');
+
+* {
+  /* background: url("../public/bg.jpg"); */
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  /* background: url("/bg.jpg"); */
+  box-sizing: border-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  overflow-x: hidden;
+}
+
+:root {
+  --headOpacity: .2;
+  --subheadOpacity: .7;
+  --firstColor: #E10B7B;
+  --secondColor: #652D90;
+  --thirdColor: #1C85C7;
+  --border: 1px solid green;
+  --mainBg: linear-gradient(-260deg, #E10B7B 0%, #652D90 49.48%, #1C85C7 100%);
+  
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-button {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #e10b7a 0%, #652D90 49.48%, #1C85C7 100%);
+}
+
+
+@keyframes hand-bg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.slide-top {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section_padding {
+    padding: 4rem;
+  }
+
+  .section_margin {
+    margin: 4rem;
+  }
+  
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    width: 100%;
+    margin: 0;
+  }
+  .section_padding {
+    padding: 4rem 2rem;
+  }
+
+  .section_margin {
+    margin: 4rem 2rem;
+  }
+  
+}
+
